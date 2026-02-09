@@ -10,8 +10,13 @@ public class Cliente {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
+  @Column(nullable = false)
   private String nome;
+
+  @Column(nullable = false)
   private String email;
+
+  @Column(nullable = false)
   private String status;
 
   public Cliente() {};
